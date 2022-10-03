@@ -42,8 +42,8 @@ jobs:
                     
           # MYSQL Docker Build with mySQL df and Push 
           
-          docker build -f Dockerfile_mysql -t $ECR_REGISTRY/assignment1-dev-mysql:v1.0 .
-          docker push $ECR_REGISTRY/assignment1-dev-mysql:v1.0
+          docker build -f Dockerfile_mysql -t $ECR_REGISTRY/assignment1-dev-db:v1.0 .
+          docker push $ECR_REGISTRY/assignment1-dev-db:v1.0
           
           # App Docker Build with default df and Push
           
