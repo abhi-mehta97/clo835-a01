@@ -37,7 +37,7 @@ jobs:
         env:
          ECR_REGISTRY: ${{ steps.ecrlogin.outputs.registry }}
         run: |
-          cd clo835-a01/  
+          cd clo835_fall2022_assignment1/
           ls -ltra
                     
           # MYSQL Docker Build with mySQL df and Push 
