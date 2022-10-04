@@ -9,4 +9,4 @@
 
 In this project, I am going to create Dockerfile, build docker image and deploy docker container on Amazon Linux.
 
-thankyou.
+thanks.
