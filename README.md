@@ -7,4 +7,6 @@
 
 # Building Docker Images and ECR - CLO835 - Abhishek Mehta
 
-In this project, I am going to create Dockerfile, build docker image and deploy docker container on Amazon Linux
+In this project, I am going to create Dockerfile, build docker image and deploy docker container on Amazon Linux.
+
+thankyou.
