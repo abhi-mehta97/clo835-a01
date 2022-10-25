@@ -37,16 +37,16 @@ jobs:
         env:
          ECR_REGISTRY: ${{ steps.ecrlogin.outputs.registry }}
         run: |
-          cd clo835_fall2022_assignment1/
+          cd assignment2/
           ls -ltra
                     
           # MYSQL Docker Build with mySQL df and Push 
           
-          docker build -f Dockerfile_mysql -t $ECR_REGISTRY/assignment1-dev-db:v1.0 .
+          docker build -f Dockerfile_mysql -t $ECR_REGISTRY/assignment2-dev-db:v1.0 .
           docker push $ECR_REGISTRY/assignment1-dev-db:v1.0
           
           # App Docker Build with default df and Push
           
-          docker build -f Dockerfile -t $ECR_REGISTRY/assignment1-dev-app:v1.0 .
+          docker build -f Dockerfile -t $ECR_REGISTRY/assignment2-dev-app:v1.0 .
           docker push $ECR_REGISTRY/assignment1-dev-app:v1.0
           docker ps -a
